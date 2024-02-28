@@ -70,19 +70,7 @@ export default class PlatformContent extends React.Component {
                       alt=""
                       height={500}
                     />
-                    <div
-                      className="icon wow zoomIn"
-                      data-wow-delay="300ms"
-                      data-wow-duration="1500ms"
-                    >
-                      <a
-                        className="video-popup"
-                        title=" Video"
-                        href="https://www.youtube.com/watch?v=442QETmJB2w"
-                      >
-                        <span className="icon-play-button"></span>
-                      </a>
-                    </div>
+                   
                   </div>
 
                   <div className="protfolio-details__content-text3">

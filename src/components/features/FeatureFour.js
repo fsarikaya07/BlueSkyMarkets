@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default class FeatureFour extends React.Component {
   render() {
-    let publicUrl = process.env.PUBLIC_URL + "/";
+    let publicUrl = "/";
     return (
       <>
         {/* Start Feature Four */}
@@ -36,7 +36,7 @@ export default class FeatureFour extends React.Component {
                   </div>
                   <div className="feature-four__single-content">
                     <h2>
-                      <Link to={process.env.PUBLIC_URL + `/services`}>
+                      <Link to={`/money-deposit`}>
                         Bank Transfer
                       </Link>
                     </h2>
@@ -68,7 +68,7 @@ export default class FeatureFour extends React.Component {
                   </div>
                   <div className="feature-four__single-content">
                     <h2>
-                      <Link to={process.env.PUBLIC_URL + `/services`}>
+                      <Link to={`/money-deposit`}>
                         Credit Card
                       </Link>
                     </h2>
@@ -101,7 +101,7 @@ export default class FeatureFour extends React.Component {
                   </div>
                   <div className="feature-four__single-content">
                     <h2>
-                      <Link to={ `#`}>
+                      <Link to={ `/money-deposit`}>
                         E-Wallet
                       </Link>
                     </h2>

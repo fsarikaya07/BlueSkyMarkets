@@ -54,14 +54,14 @@ export default class FooterOne extends React.Component {
                           <div className="footer-widget__about-social-link">
                             <ul>
                               <li>
-                                <a href="https://twitter.com/BlueSkyForex">
+                                <a href="https://twitter.com/BlueSkyForex"  target="_blank" rel="noopener noreferrer">
                                   <span className="first icon-twitter"></span>
                                   <span className="second icon-twitter"></span>
                                 </a>
                               </li>
 
                               <li>
-                                <a href="https://www.instagram.com/bluesky.markets/">
+                                <a href="https://www.instagram.com/bluesky.markets/"  target="_blank" rel="noopener noreferrer">
                                   <span className="first icon-linkedin"></span>
                                   <span className="second icon-linkedin"></span>
                                 </a>

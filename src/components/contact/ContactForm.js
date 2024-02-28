@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import ToastComponent from "../toastComponent/ToastComponent";
 const ContactForm = () => {
   const form = useRef();
   const [showAlert, setShowAlert] = useState(false);
@@ -98,6 +99,12 @@ const ContactForm = () => {
 
             <div className="col-xl-8 col-lg-8 col-md-7">
               <div className="contact-page__form">
+                {showAlert && (
+                  <ToastComponent
+                    showAlert={showAlert}
+                    setShowAlert={setShowAlert}
+                  />
+                )}
                 <form
                   ref={form}
                   onSubmit={sendEmail}
@@ -109,8 +116,9 @@ const ContactForm = () => {
                       <div className="comment-form__input-box">
                         <input
                           type="text"
-                          placeholder="Full name"
-                          name="name"
+                          placeholder="Full Name*"
+                          name="user_name"
+                          required
                         />
                       </div>
                     </div>
@@ -118,8 +126,9 @@ const ContactForm = () => {
                       <div className="comment-form__input-box">
                         <input
                           type="email"
-                          placeholder="Email address"
-                          name="email"
+                          placeholder="Email address*"
+                          name="user_email"
+                          required
                         />
                       </div>
                     </div>
@@ -127,14 +136,19 @@ const ContactForm = () => {
                   <div className="row">
                     <div className="col-xl-6 col-lg-6">
                       <div className="comment-form__input-box">
-                        <input type="text" placeholder="Phone" name="phone" />
+                        <input
+                          type="text"
+                          placeholder="Phone*"
+                          name="to_phone"
+                          required
+                        />
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6">
                       <div className="comment-form__input-box">
                         <input
                           type="text"
-                          placeholder="Subject"
+                          placeholder="Reference"
                           name="subject"
                         />
                       </div>

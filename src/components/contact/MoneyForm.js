@@ -45,12 +45,12 @@ const MoneyForm = () => {
                   className="comment-one__form contact-form-validated"
                   novalidate="novalidate"
                 >
-                  <h1 className="inputTitle ">OPEN ACCOUNT NOW!</h1>
+                  <h1 className="inputTitle ">WITHDRAW MONEY</h1>
                   <p className="inputTitle">
-                    FILL OUT THE FORM TO OPEN AN ACCOUNT
+                    FILL OUT THE FORM TO WITHDRAW MONEY
                   </p>
                   <p className="text-center mb-5">
-                    Make sure your information is complete
+                    Make sure all information is right.
                   </p>
                   <div className="row ">
                     <h4 className="inputTitle">APPLY NOW</h4>
@@ -100,12 +100,12 @@ const MoneyForm = () => {
 
                       <button
                         className="thm-btn comment-form__btn"
-                        data-text="Send Message +"
+                        data-text="Withdraw +"
                         type="submit"
                         data-loading-text="Please wait..."
                         value="Send"
                       >
-                        Send File +
+                        Withdraw
                       </button>
                     </div>
                   </div>

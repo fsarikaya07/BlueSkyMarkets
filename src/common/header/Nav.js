@@ -18,7 +18,11 @@ const Nav = () => {
                        
                     </li>
                     <li className="dropdown">
-                        <Link to={ `/money-deposit`}>Money Deposit/Withdrawal</Link>
+                        <Link to={ `/money-deposit`}>Money Deposit</Link>
+                        
+                    </li>
+                    <li className="dropdown">
+                        <Link to={ `/money-withdraw`}>Money Withdraw</Link>
                         
                     </li>
                     <li className="dropdown">

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ToastComponent from "../toastComponent/ToastComponent";
-const FileForm = () => {
+const MoneyForm = () => {
   const form = useRef();
   const [showAlert, setShowAlert] = useState(false);
   const sendEmail = (e) => {
@@ -59,7 +59,7 @@ const FileForm = () => {
                         <input
                           type="text"
                           placeholder="Full name"
-                          name="from_name"
+                          name="name"
                         />
                       </div>
                     </div>
@@ -68,7 +68,7 @@ const FileForm = () => {
                         <input
                           type="email"
                           placeholder="Email address"
-                          name="user_email"
+                          name="email"
                         />
                       </div>
                     </div>
@@ -76,19 +76,15 @@ const FileForm = () => {
                   <div className="row">
                     <div className="col-xl-6 col-lg-6">
                       <div className="comment-form__input-box">
-                        <input
-                          type="text"
-                          placeholder="Phone"
-                          name="to_phone"
-                        />
+                        <input type="text" placeholder="Phone" name="phone" />
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6">
                       <div className="comment-form__input-box">
                         <input
                           type="text"
-                          placeholder="Reference"
-                          name="reference"
+                          placeholder="Account Number"
+                          name="account-number"
                         />
                       </div>
                     </div>
@@ -97,8 +93,8 @@ const FileForm = () => {
                     <div className="col-xl-12 col-lg-12">
                       <div className="comment-form__input-box text-message-box">
                         <label>
-                          <i className="fa-solid fa-paperclip"></i>File:
-                          <input type="file" name="to_file" />
+                          Withdrawal Amount:
+                          <input type="number" name="file" />
                         </label>
                       </div>
 
@@ -122,4 +118,4 @@ const FileForm = () => {
     </>
   );
 };
-export default FileForm;
+export default MoneyForm;

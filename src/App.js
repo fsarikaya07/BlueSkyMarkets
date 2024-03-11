@@ -20,6 +20,7 @@ import Deposit from "./pages/Deposit";
 import Platform from "./pages/Platform";
 import OpenAcc from "./pages/OpenAcc";
 import Whatsapp from "./components/Whatsapp";
+import MoneyWithdraw from "./pages/MoneyWithdraw";
 
 function App() {
   useEffect(() => {
@@ -37,6 +38,7 @@ function App() {
         <Route path={`/about`} exact element={<AboutOne />} />
         <Route path={`/platform`} exact element={<Platform />} />
         <Route path={`/money-deposit`} exact element={<Deposit />} />
+        <Route path={`/money-withdraw`} exact element={<MoneyWithdraw />} />
         <Route path={`/account`} exact element={<Account />} />
         <Route path={`/open-account`} exact element={<OpenAcc />} />
         <Route path={`/contact`} exact element={<ContactPage />} />

@@ -10,7 +10,7 @@ const MoneyForm = () => {
     emailjs
       .sendForm(
         "service_qdrm1n8",
-        "template_mc91pa9",
+        "template_73a3cvt",
         form.current,
         "SnhIAoux4ygkXsY6u"
       )
@@ -59,7 +59,7 @@ const MoneyForm = () => {
                         <input
                           type="text"
                           placeholder="Full name"
-                          name="name"
+                          name="from_name"
                         />
                       </div>
                     </div>
@@ -68,7 +68,7 @@ const MoneyForm = () => {
                         <input
                           type="email"
                           placeholder="Email address"
-                          name="email"
+                          name="user_email"
                         />
                       </div>
                     </div>
@@ -76,7 +76,7 @@ const MoneyForm = () => {
                   <div className="row">
                     <div className="col-xl-6 col-lg-6">
                       <div className="comment-form__input-box">
-                        <input type="text" placeholder="Phone" name="phone" />
+                        <input type="text" placeholder="Phone" name="to_phone" />
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6">
@@ -94,7 +94,7 @@ const MoneyForm = () => {
                       <div className="comment-form__input-box text-message-box">
                         <label>
                           Withdrawal Amount:
-                          <input type="number" name="file" />
+                          <input type="number" name="withdrawal-amount" />
                         </label>
                       </div>
 

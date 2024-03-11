@@ -10,7 +10,7 @@ const ContactForm = () => {
     emailjs
       .sendForm(
         "service_qdrm1n8",
-        "template_73a3cvt",
+        "template_mc91pa9",
         form.current,
         "SnhIAoux4ygkXsY6u"
       )
@@ -117,7 +117,7 @@ const ContactForm = () => {
                         <input
                           type="text"
                           placeholder="Full Name*"
-                          name="user_name"
+                          name="from_name"
                           required
                         />
                       </div>
@@ -149,7 +149,7 @@ const ContactForm = () => {
                         <input
                           type="text"
                           placeholder="Reference"
-                          name="subject"
+                          name="reference"
                         />
                       </div>
                     </div>
